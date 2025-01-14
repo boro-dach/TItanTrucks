@@ -13,7 +13,7 @@ export default function WhyChooseUs() {
   const t = useTranslations("MainPage");
 
   return (
-      <section className="py-8 sm:py-12 lg:py-16 bg-gray-50" id="advantages" style={manrope.style}>
+      <section className="py-8 sm:py-12 lg:py-16 bg-gray-50" id="benefits" style={manrope.style}>
         <div className="container mx-auto px-4 sm:px-8 lg:px-16">
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-800 mb-6 sm:mb-8 lg:mb-10 text-center lg:text-left">
             {t("wcu.why-choose-us")}

@@ -29,16 +29,22 @@ export default function Navigation() {
                     {/* Desktop Menu */}
                     <div className="hidden lg:flex flex-1 justify-center">
                         <div className="flex items-center gap-16">
-                            {[t("home"), t("technique"), t("benefits"), t("partners")].map((item) => (
+                            {[
+                                { label: "home", link: "#home" },
+                                { label: "technique", link: "#technique" },
+                                { label: "benefits", link: "#benefits" },
+                                { label: "partners", link: "#partners" }
+                            ].map(({ label, link }) => (
                                 <SplitText
-                                    key={item}
-                                    text={item}
-                                    href={`#${item.toLowerCase()}`}
+                                    key={label}
+                                    text={t(label)} // Перевод текста
+                                    href={link} // Ссылка не меняется
                                     className="text-white hover:text-primary transition-colors font-medium"
                                 />
                             ))}
                         </div>
                     </div>
+
 
                     {/* Language Switcher */}
                     <div className="hidden lg:block">

@@ -73,7 +73,7 @@ export default function ProductCards({ onShowMore }: ProductCardsProps) {
   }
 
   return (
-      <section className="py-8 sm:py-12 lg:py-16 bg-white" id="equipment" style={manrope.style}>
+      <section id='technique' className="py-8 sm:py-12 lg:py-16 bg-white" style={manrope.style}>
         <div className="container mx-auto px-4 sm:px-8 lg:px-16">
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 text-center mb-6 sm:mb-8 lg:mb-10">
             {t("find-the-right-equipment")}
