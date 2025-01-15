@@ -88,19 +88,25 @@ export default function Navigation() {
                     } lg:hidden fixed top-0 left-0 right-0 bg-[#2A2C2B] transition-all duration-300 ease-in-out pt-24 pb-8 px-4 z-10`}
                 >
                     <div className="flex flex-col items-center gap-6 bg-[#2A2C2B]">
-                        {[t("home"), t("technique"), t("benefits"), t("partners")].map((item) => (
+                        {[
+                            { label: "home", link: "#home" },
+                            { label: "technique", link: "#technique" },
+                            { label: "benefits", link: "#benefits" },
+                            { label: "partners", link: "#partners" }
+                        ].map(({ label, link }) => (
                             <SplitText
-                                key={item}
-                                text={item}
-                                href={`#${item.toLowerCase()}`}
+                                key={label}
+                                text={t(label)} // Перевод текста
+                                href={link} // Ссылка
                                 className="text-lg text-white hover:text-primary transition-colors"
                             />
                         ))}
-                        <div className="pt-4">
-                            <TranslateSwitcher />
-                        </div>
-                    </div>
+                    <div className="pt-4">
+                        <TranslateSwitcher />
                 </div>
+    </div>
+</div>
+
             </div>
         </nav>
     );
