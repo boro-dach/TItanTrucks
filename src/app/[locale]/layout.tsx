@@ -6,7 +6,6 @@ import "./globals.css";
 import Navigation from "@/components/Navigation";
 import { notFound } from "next/navigation";
 
-// Define fonts
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -22,18 +21,18 @@ export const metadata: Metadata = {
   description: "Широкий выбор грузовой техники для любых задач",
 };
 
-// Update the type definition to match Next.js expectations
 type RootLayoutProps = {
   children: React.ReactNode;
-  params: {
-    locale: string;
-  };
+  params: Promise<{ locale: string }>;
 }
 
 export default async function RootLayout({
   children,
-  params: { locale }
+  params,
 }: RootLayoutProps) {
+  // Wait for the locale parameter
+  const { locale } = await params;
+
   // Проверка на допустимость локали
   if (!routing.locales.includes(locale as any)) {
     notFound();
