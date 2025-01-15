@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TitanTrucks - Надёжные грузовые машины",
-  description: "Широкий выбор грузовой техники для любых задач",
+title: "TitanTrucks - Etibarlı yük maşınları",
+description: "Hər cür tapşırıq üçün geniş yük texnikası seçimi"
 };
 
 type RootLayoutProps = {
