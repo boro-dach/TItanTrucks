@@ -77,6 +77,16 @@ const PopularProductCards = forwardRef<HTMLElement>((props, ref) => {
             times: "921",
             year: 2021,
             image: "/tractor5.jpg",
+        },
+        {
+            id: 6,
+            name: "DX225 LC90",
+            description: "Bu, təxminən 22 ton ağırlığında yükləmə qabiliyyətinə malik, güclü mühərrik və hidravlik sistemlə təchiz edilmiş Doosan markalı gənc əkskavatorudur ki, bu da səmərəli torpaq işləri üçün nəzərdə tutulub.",
+            weight: "22 ton",
+            price: "145.000 AZN",
+            times: "2500",
+            year: 2022,
+            image: "/tractor6.jpeg"
         }
     ]
 
@@ -126,8 +136,8 @@ const PopularProductCards = forwardRef<HTMLElement>((props, ref) => {
                         </div>
                     ))}
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-                    {products.slice(3, 5).map((product) => (
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+                    {products.slice(3, 6).map((product) => (
                         <div
                             key={product.id}
                             className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"

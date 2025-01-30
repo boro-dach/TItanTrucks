@@ -16,7 +16,8 @@
         "Komatsu PC 290 LC": "Universal excavator for Urban Construction and work",
         "Hyundai 220 LC-95": "Powerful excavator-puller for medium and large construction work",
         "Caterpillar 336": "Compact excavator for working in a confined space",
-        "DONGFENG": "Professional excavator for large-scale projects"
+        "DONGFENG": "Professional excavator for large-scale projects",
+        "DX225 LC90": "This is a tracked excavator, Doosan, equipped with a powerful engine and a hydraulic system for efficient earthmoving operations."
       },
       "mass": "Mass",
       "time": "Time work",
@@ -34,7 +35,8 @@
         "Hyundai 220 LC-95": "Powerful excavator-loader for medium and large construction works",
         "Komatsu PC 290 LC": "Universal excavator for urban construction and works",
         "Caterpillar 336": "Compact excavator for working in confined spaces",
-        "DONGFENG": "Professional excavator for large-scale projects"
+        "DONGFENG": "Professional excavator for large-scale projects",
+        "DX225 LC90": "This is a tracked excavator, Doosan, equipped with a powerful engine and a hydraulic system for efficient earthmoving operations."
       },
     "show-more": "Show More",
     "wcu": {
